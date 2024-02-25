@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>karate-examples</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>karate-examples</name>
+    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>using-karate-core-setup-example</module>
+        <module>using-karate-junit-setup-example</module>
+        <module>karate-examples-module</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+
+    <dependencyManagement>
+
+        <dependencies>
+
+            <dependency>
+                <groupId>com.intuit.karate</groupId>
+                <artifactId>karate-core</artifactId>
+                <version>1.4.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.intuit.karate</groupId>
+                <artifactId>karate-junit5</artifactId>
+                <version>1.4.1</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.12.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

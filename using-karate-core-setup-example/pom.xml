@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>karate-examples</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>using-karate-core-setup-example</artifactId>
+    <name>Archetype - using-karate-core-example</name>
+
+    <url>http://maven.apache.org</url>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-core</artifactId>
+        </dependency>
+
+    </dependencies>
+
+
+    <build>
+
+        <!-- This allows us to keep the feature files and java files in classpath at their respective package within test-classes folder
+         https://github.com/karatelabs/karate?tab=readme-ov-file#folder-structure -->
+        <testResources>
+            <testResource>
+                <directory>src/test/java</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </testResource>
+        </testResources>
+
+        <!-- This plugin is required to run the main file from command line using mvn command -->
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <classpathScope>test</classpathScope>
+                </configuration>
+            </plugin>
+
+
+        </plugins>
+
+    </build>
+
+</project>
