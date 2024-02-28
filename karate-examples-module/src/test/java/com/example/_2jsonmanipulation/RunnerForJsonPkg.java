@@ -21,4 +21,10 @@ public class RunnerForJsonPkg {
 
         return Karate.run("classpath:com/example/_2jsonmanipulation/1.ReadJson.feature");
     }
+
+    @Karate.Test
+    Karate testCreateReadJson(){
+
+        return Karate.run("classpath:com/example/_2jsonmanipulation/2.CreateJson.feature");
+    }
 }

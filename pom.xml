@@ -22,7 +22,6 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-
     <dependencyManagement>
 
         <dependencies>
@@ -37,6 +36,12 @@
                 <groupId>com.intuit.karate</groupId>
                 <artifactId>karate-junit5</artifactId>
                 <version>1.4.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.datafaker</groupId>
+                <artifactId>datafaker</artifactId>
+                <version>2.1.0</version>
             </dependency>
 
         </dependencies>

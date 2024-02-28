@@ -35,4 +35,4 @@ Feature: ReadJson
     And request reqPayload
     When method post
     Then status 201
-    * print response
+    And print response
