@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "firstName": "Susie",
+    "lastName": "Spurgin",
+    "isManager": false
+  },
+  {
+    "id": 2,
+    "firstName": "Robbie",
+    "lastName": "Gwinnel",
+    "isManager": true
+  }
+]
