@@ -17,8 +17,8 @@ import com.intuit.karate.junit5.Karate;
 public class RunnerForUsingRepeatMethodPkg {
 
     @Karate.Test
-    Karate testUsingRepeatMethodPkg(){
+    Karate testCallingKarateRepeat(){
 
-        return Karate.run("classpath:com/example/_12usingrepeatmethod/1.callingjscode.feature");
+        return Karate.run("classpath:com/example/_12usingrepeatmethod/1.usingkaraterepeat.feature");
     }
 }

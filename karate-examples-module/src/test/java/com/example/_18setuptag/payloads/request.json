@@ -1,0 +1,16 @@
+{
+  "name": "Piyush",
+  "job": "Engineer",
+  "address": [
+    {
+      "addressType": "Permanent",
+      "city": "BLR",
+      "state": "Karnataka"
+    },
+    {
+      "addressType": "Temporary",
+      "city": "New Delhi",
+      "state": "Delhi"
+    }
+  ]
+}

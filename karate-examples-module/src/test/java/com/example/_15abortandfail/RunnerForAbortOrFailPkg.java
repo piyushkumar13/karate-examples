@@ -6,7 +6,7 @@
  *  AND CONSTITUTES A VALUABLE TRADE SECRET.
  */
 
-package com.example._11callingjscode;
+package com.example._15abortandfail;
 
 import com.intuit.karate.junit5.Karate;
 
@@ -14,11 +14,11 @@ import com.intuit.karate.junit5.Karate;
  * @author Piyush Kumar.
  * @since 25/02/24.
  */
-public class RunnerForCallingJsCodePkg {
+public class RunnerForAbortOrFailPkg {
 
     @Karate.Test
-    Karate testCallingJsCode(){
+    Karate testForAbortOrFail(){
 
-        return Karate.run("classpath:com/example/_11callingjscode/1.callingjscode.feature");
+        return Karate.run("classpath:com/example/_15abortandfail/1.aboartandfailusage.feature");
     }
 }
